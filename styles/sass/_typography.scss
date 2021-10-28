@@ -1,0 +1,43 @@
+
+html {
+  // font-size: 125%;
+  // for accesibility changes fonts to 20px as starting point
+}
+
+// Font families
+h1, h2, h3, h4, nav, button {
+ font-family: 'Playfair Display', serif;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+// Letter spacing
+
+h3, nav, button {
+  letter-spacing: 0.063rem;
+}
+// Text sizes 
+h1 {
+  /* Do I need to put the exact pixel size mentioned in the design reference or do I make this into REMs? */
+  font-size: 8.625rem;
+}
+
+h2 {
+font-size: 5rem;
+}
+
+h3 {
+  font-size: 2.625rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+// Font color
+
+footer {
+color: white;
+}
