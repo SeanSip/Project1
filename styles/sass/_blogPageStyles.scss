@@ -20,7 +20,7 @@ margin-top: 320px;
 /* main content and aside container */
 .blogPostMainContainer {
   display: flex;
-  border: dashed red 2px;
+ 
 }
 
 
@@ -30,7 +30,7 @@ margin-top: 320px;
 .rightBlogPostContainer {
   display: flex;
   flex-direction: column;
-  border: dashed green 2px;
+  
   width: 80%;
   margin-top: -420px;
   padding-left: 100px;

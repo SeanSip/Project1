@@ -602,7 +602,6 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: dashed red 2px;
 }
 
 /* Main blog content*/
@@ -614,7 +613,6 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: dashed green 2px;
   width: 80%;
   margin-top: -420px;
   padding-left: 100px;
