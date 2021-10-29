@@ -17,7 +17,8 @@
 
 <body>
   <!-- start of header section -->
-  <header>
+  <header id="home">
+    
     <div class="wrapper">
       <div class="headerBackground"></div>
       <div class="secondHeaderBackground"></div>
@@ -27,10 +28,10 @@
       <nav>
         <ul>
           <!-- /* is it okay to flex ul items? */ -->
-          <li><a href="#about">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
       <div class="container flex">
@@ -52,7 +53,8 @@
     <section id="about">
       <div class="wrapper">
         <!-- start of header text flex container -->
-        <div class="whatIsContainer flex">
+        <!-- start of about section -->
+        <div class="whatIsContainer">
           <h3>WHAT IS CAPTURED?</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus debitis dolores reprehenderit quas
             provident delectus cum asperiores, necessitatibus totam odit! Veritatis explicabo vitae asperiores nemo
@@ -60,10 +62,8 @@
             Recusandae adipisci quas libero.</p>
           <button>FIND OUT MORE</button>
         </div>
-        <!-- end of header text flex container -->
-        <!-- start if about section -->
-        <div class="aboutContainer flex">
-          <!-- start of about section information/gallery container -->
+        <!-- start of about section main content -->
+        <div class="aboutContainer">
           <div class="leftImg">
             <img src="./captured-final-assets/left-image.jpg"
               alt="Digital camera with a large zoom lense attached, sitting ontop of a tripod pointed skyward">
@@ -74,18 +74,26 @@
               odit a aperiam unde quam, modi explicabo reiciendis numquam repellat?</p>
             <button>READ MORE</button>
           </div>
+        </div>
+        <div class="aboutContainerBottom">
           <div class="leftAboutContainer">
             <h4>GETTING NEW GEAR</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, rerum. Amet similique doloremque
               consequuntur! Natus inventore soluta consequatur similique praesentium dicta, commodi maxime quia vero.
             </p>
             <button>READ MORE</button>
-            <div class="rightImg">
-              <img src="./captured-final-assets/right-image.jpg"
-                alt="Close-up of someone's hands holding a digital camera">
-            </div>
+          </div>
+          <div class="rightImg">
+            <img src="./captured-final-assets/right-image.jpg"
+              alt="Close-up of someone's hands holding a digital camera">
           </div>
         </div>
+
+
+
+
+
+
         <!-- end of about section information/gallery container -->
         <div class="aboutSectionNavContainer">
           <!-- Start of about section navigation container -->
@@ -115,6 +123,7 @@
           </div>
         </div>
       </div>
+      </div>
       <!-- end of about section navigation container -->
     </section>
     <!-- end of about section -->
@@ -131,7 +140,12 @@
             alt="Person sitting down ontop of a rock ledge, with a camera in hand and a mountain vista ahead">
           <div class="profileInfoContainer">
             <h3>THIS MONTH PROFILE</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio expedita harum quo molestias, veritatis rem. Voluptatum nostrum alias incidunt itaque deleniti, modi exercitationem ipsa beatae ipsam dignissimos culpa, sint porro necessitatibus! Aliquid est nemo corrupti quo, corporis accusamus ea doloribus itaque, sint illum pariatur vero molestiae aspernatur, recusandae saepe velit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia recusandae est deleniti veritatis, id vitae quasi! Placeat eaque repudiandae quis.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio expedita harum quo molestias, veritatis
+              rem. Voluptatum nostrum alias incidunt itaque deleniti, modi exercitationem ipsa beatae ipsam dignissimos
+              culpa, sint porro necessitatibus! Aliquid est nemo corrupti quo, corporis accusamus ea doloribus itaque,
+              sint illum pariatur vero molestiae aspernatur, recusandae saepe velit. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Quia recusandae est deleniti veritatis, id vitae quasi! Placeat eaque
+              repudiandae quis.</p>
             <button>FIND OUT MORE</button>
           </div>
         </div>

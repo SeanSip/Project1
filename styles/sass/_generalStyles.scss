@@ -19,10 +19,11 @@ padding: 120px 0;
 
 .wrapper {
   border: solid blue 5px;
-  width: 90%;
+  max-width: 1400px;
   margin: auto;
  
 }
+
 
 .grid {
   display: grid;
@@ -35,3 +36,12 @@ li {
 a {
   text-decoration: none;
 }
+
+// buttons
+
+button {
+  background-color: #4ceea7;
+  border: none;
+  height: 40px;
+}
+

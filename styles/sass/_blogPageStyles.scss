@@ -1,0 +1,115 @@
+/* start of blog page*/
+ 
+
+
+
+#blog{ background-image: url(../captured-final-assets/blog-header.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ 
+}
+
+
+ #blog h2 {
+text-align: center;
+margin-top: 450px;
+ }
+ 
+
+/* main content and aside container */
+.blogPostMainContainer {
+  display: flex;
+  border: dashed red 2px;
+}
+
+
+/* Main blog content*/
+
+.rightBlogPostContainer {
+  display: flex;
+  flex-direction: column;
+  border: dashed green 2px;
+  width: 65%;
+  margin-top: -420px;
+  padding-left: 200px;
+  
+}
+
+.blogText{
+  margin-top: 80px;
+  width: 75%;
+  
+}
+
+.rightBlogPostContainer img{
+  box-shadow: yellow -40px 40px;
+  z-index: 1;
+  width: 100%;
+
+}
+
+ /* Aside content*/
+
+
+ aside ul {
+   
+  justify-content: flex-start;
+  flex-direction: column;
+ }
+
+ aside li {
+
+ 
+ padding: 0;
+ }
+
+ aside li::before {content: "•"; color: #4CEEA7;
+  margin-right: 20px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  // flex: 1 0 35%;
+  width: 35%;
+  text-align: left;
+}
+
+aside img {
+  width: 80%;
+  
+}
+
+.aboutCapture, .recentPosts{
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  align-self: center;
+}
+
+.textInput {
+  border: dashed orange 2px;
+}
+
+/* comment section */
+
+.topComment, .bottomComment {
+  display: flex;
+  width: 65%;
+
+}
+
+.topComment img {
+ margin-right: 50px;
+ box-shadow: none;
+ width: 100px;
+ height: 100px;
+ 
+}
+
+.bottomComment img{
+  margin-right: 50px;
+  box-shadow: none;
+  width: 100px;
+  height: 100px;
+}

@@ -3,13 +3,14 @@
 @import 'typography';
 
 
+
 /* Header section*/
 
-header {
+  header {
   position: relative;
   background-repeat: no-repeat;
   min-height:70vh;
-  border: 5px solid orange;
+
 }
 
 .headerBackground {
@@ -49,9 +50,7 @@ header {
 
 
 /* Header navigation menu*/
-nav{
 
-}
 
 ul{
   display: flex;
@@ -74,12 +73,13 @@ h1 {
 /* About Section*/
 
 
-
+/* about section top information container */
 .whatIsContainer{
-  border: solid 5px orange;
+  display: flex;
   flex-direction: column;
   width: 50%;
-  margin: 0 auto;
+  margin: 0 auto 200px auto;
+  
 }
 
 .whatIsContainer p{
@@ -94,29 +94,70 @@ h1 {
 
 
 .whatIsContainer button {
-  min-width: 20%;
+  
   margin: 0 auto;
 }
 
+/* main about section content container (middle)*/
 .aboutContainer {
- border: solid 5px red;
- flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+//  border: solid 5px red;
+ 
  
 }
 
-.leftImg , .rightImg{
-  width: 25%;
-  border: solid 5px cyan;
+.aboutContainerBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftImg {
+  display: flex;
+  margin-left: -100px;
+  flex-basis: 45%;
+  // margin: 50px;
+  // padding: 100px;
+}
+
+.rightImg{
+  display: flex;
+  flex-basis: 45%;
+  margin-right: -100px;
+ 
+  // padding: 100px;
+  }
+
+.leftImg img{
+  height: 100%;
+  box-shadow: yellow 20px 20px;
+}
+
+.rightImg img{
+  height: 100%;
+  box-shadow: yellow -20px 20px;
 }
 
 .rightAboutContainer, .leftAboutContainer {
-  
+  display: flex;
+  flex-direction: column;
   align-self: center;
-  width: 25%;
+  flex-basis: 45%;
+  border: red dashed 2px;
   
+
 }
 
-/* About section nav container */
+// // .leftAboutContainer {
+// //   display: flex;
+// //   flex-direction: column;
+// //   align-self: center;
+// //   flex-basis: 45%;
+// //   text-align: right;
+// //   border: red dashed 2px;
+
+// /* About section nav container */
+// }
 
 .aboutSectionNavContainer{
 border: dashed black 5px;
@@ -209,3 +250,5 @@ footer{
   padding: 5px 0;
   background-color: black;
 }
+
+@import 'blogPageStyles'

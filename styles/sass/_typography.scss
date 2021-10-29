@@ -13,11 +13,18 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-// Letter spacing
+// Letter spacing 
 
 h3, nav, button {
   letter-spacing: 0.063rem;
 }
+
+// line heights
+
+body {
+  line-height: 2rem;
+}
+
 // Text sizes 
 h1 {
   /* Do I need to put the exact pixel size mentioned in the design reference or do I make this into REMs? */
@@ -41,3 +48,4 @@ h4 {
 footer {
 color: white;
 }
+
