@@ -1,3 +1,9 @@
+a:hover{
+  border-bottom: #4CEEA7 3px solid;
+  transition: 0.3s;
+  color: #4cee4c;
+
+}
 
 
   h1, h3{
@@ -18,7 +24,6 @@ padding: 120px 0;
 }
 
 .wrapper {
-  border: solid blue 5px;
   max-width: 1400px;
   margin: auto;
  
@@ -43,5 +48,26 @@ button {
   background-color: #4ceea7;
   border: none;
   height: 40px;
-}
+  margin: 40px 0;
+  &:hover{
+    background: #008000;
+    border: 5px solid #4cee4c;
+    border-style: inset;
+    color: #fafafafa;
+    transition: 0.2s;
+    cursor: pointer;
+    }
+  }
 
+textarea{
+  resize: none;
+  border-style: none;
+  border-color: #4CEEA7;
+  border: #4cee4c solid 1px;
+    }
+
+    input, text {
+      width: 80%;
+      border-style: none;
+      border-bottom: #4cee4c solid 1px;
+     }

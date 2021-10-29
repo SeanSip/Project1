@@ -1,0 +1,32 @@
+
+
+#contact h2{
+  margin-top: 250px;
+  text-align: center;
+}
+
+#contact header {
+  background-image: url(../captured-final-assets/contact-header.jpg);
+  background-size: cover;
+}
+
+.contactText{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 35%;
+  border-left: yellow solid 30px;
+  border-bottom: yellow solid 30px;
+  flex-direction: column;
+  width: 60%;
+  height: 500px;
+}
+
+.contactText button{
+  width: 80%;
+}
+ 
+  
+
+ 
+  

@@ -15,44 +15,47 @@
 </head>
 
 <body id="contact">
+
   <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="index.html#about">ABOUT</a></li>
-        <li><a href="blog.html">BLOG</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-      </ul>
-    </nav>
-
-
-    <h2>GET IN TOUCH</h2>
-
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="index.html#about">ABOUT</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <h2>GET IN TOUCH</h2>
+    </div>
   </header>
+  <div class="wrapper">
 
-  <div class="textInput">
-    <form action="submit">
+    <form class="contactText">
+
       <label for="username">Name</label>
-      <input type="text" name="username" id="username">
+      <input type="text" name="username" id="username" required>
 
       <label for="email">Email address</label>
-      <input type="email" name="email" id="email">
+      <input type="email" name="email" id="email" required>
 
-      <label for="comment">Comment</label>
-      <textarea name="comment" id="comment" cols="80" rows="10"></textarea>
-      <button type="submit">POST COMMENT</button>
+      <label for="message">Message</label>
+      <textarea id="comment" name="comment" cols="90" rows="10" required></textarea>
 
+      <button type="submit">submit</button>
     </form>
+
   </div>
 
+
   <aside>
-    <h4>INFO@EMAIL.COM</h4>
+    <h4>info@email.com</h4>
     <p>123 - 456 - 7890</p>
     <p>123 Queen Street West, Unit 10</p>
     <p>Toronto, Ontario</p>
     <p>M5V2D5</p>
   </aside>
-
+  </div>
   <footer>
     <!-- start of footer -->
     Copyright &copy; 2021 Juno College of Technology, Inc.
@@ -60,3 +63,5 @@
 
 
 </body>
+
+</html>

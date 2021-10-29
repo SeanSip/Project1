@@ -1,12 +1,12 @@
 
 html {
-  // font-size: 125%;
-  // for accesibility changes fonts to 20px as starting point
+  font-size: 125%;
 }
 
 // Font families
 h1, h2, h3, h4, nav, button {
  font-family: 'Playfair Display', serif;
+ text-transform: uppercase;
 }
 
 body {
@@ -16,32 +16,41 @@ body {
 // Letter spacing 
 
 h3, nav, button {
-  letter-spacing: 0.063rem;
+  letter-spacing: 0.05rem;
 }
 
 // line heights
 
-body {
-  line-height: 2rem;
+body p, button {
+  line-height: 1.6rem;
+}
+
+nav{
+  line-height: 1.45rem;
 }
 
 // Text sizes 
+
+body p{
+  font-size: 1rem ;
+}
+
 h1 {
-  /* Do I need to put the exact pixel size mentioned in the design reference or do I make this into REMs? */
-  font-size: 8.625rem;
+  font-size: 6.9rem;
 }
 
 h2 {
-font-size: 5rem;
+font-size: 4rem;
 }
 
 h3 {
-  font-size: 2.625rem;
+  font-size: 2.1rem;
 }
 
-h4 {
-  font-size: 2rem;
+h4, i {
+  font-size: 1.6rem;
 }
+
 
 // Font color
 

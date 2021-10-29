@@ -42,7 +42,6 @@
 
 .container{
   margin-top: 380px;
-  border: solid 5px green;
   justify-content: center;
   
 }
@@ -78,7 +77,7 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin: 0 auto 200px auto;
+  margin: 0 auto 100px auto;
   
 }
 
@@ -94,7 +93,7 @@ h1 {
 
 
 .whatIsContainer button {
-  
+  width: 200px;
   margin: 0 auto;
 }
 
@@ -102,9 +101,6 @@ h1 {
 .aboutContainer {
   display: flex;
   justify-content: space-between;
-//  border: solid 5px red;
- 
- 
 }
 
 .aboutContainerBottom {
@@ -116,16 +112,12 @@ h1 {
   display: flex;
   margin-left: -100px;
   flex-basis: 45%;
-  // margin: 50px;
-  // padding: 100px;
 }
 
 .rightImg{
   display: flex;
   flex-basis: 45%;
   margin-right: -100px;
- 
-  // padding: 100px;
   }
 
 .leftImg img{
@@ -142,61 +134,50 @@ h1 {
   display: flex;
   flex-direction: column;
   align-self: center;
-  flex-basis: 45%;
-  border: red dashed 2px;
-  
-
+  flex-basis: 38%;
 }
 
-// // .leftAboutContainer {
-// //   display: flex;
-// //   flex-direction: column;
-// //   align-self: center;
-// //   flex-basis: 45%;
-// //   text-align: right;
-// //   border: red dashed 2px;
+.leftAboutContainer {
+  text-align: right;
+}
 
-// /* About section nav container */
-// }
+.rightAboutContainer button {
+  width: 150px;
+  }
+
+.leftAboutContainer button {
+width: 150px;
+align-self: flex-end;
+}
+
+
+/* About section nav container */
+
 
 .aboutSectionNavContainer{
-border: dashed black 5px;
 display: flex;
 flex-wrap: wrap;
-
-
+position: relative;
+width: 95%;
+margin: 0 auto;
 }
 
 
-.topPicksContainer{
-  display: flex;
-  flex-direction: column;
-  border: dashed cyan 2px;
-  flex:1 0 35%;
-  margin: 25px;
-}
-
-.communityContainer{
-  display: flex;
-  flex-direction: column;
-  border: dashed cyan 2px;
-  flex: 1 0 35%;
-  margin: 25px;
-  
-}
-
-.blogContainer{
-  border: dashed cyan 2px;
+.topPicksContainer, .communityContainer, .blogContainer, .getInTouchContainer{
   flex-direction: column;
   flex:1 0 35%;
   margin: 25px;
 }
 
-.getInTouchContainer{
-  border: dashed cyan 2px;
-  flex-direction: column;
-  flex:1 0 35%;
-  margin: 25px;
+
+i{
+  position: absolute;
+  margin: 45px -50px;
+  background:rgba($color: #4ceea4, $alpha: 0.5);
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+
 }
 
 
@@ -208,8 +189,8 @@ flex-wrap: wrap;
 
 .thisMonthProfile {
   display: flex;
-  border: dashed orange 2px;
   margin: 50px 0;
+  
 }
 
 .thisMonthProfile img{
@@ -217,19 +198,19 @@ flex-wrap: wrap;
   margin: 10px 35px;
   box-shadow: yellow 20px 30px;
   flex: 1 0;
+  // height: 380px;
+  align-self: center;
 }
 
 .profileInfoContainer {
-  display: flex;
   flex-direction: column;
-  justify-content: space-around ;
-  padding-bottom: 100px;
-  border: dashed red 2px;
-  flex: 2 65%;
+  padding: 50px;
+  flex: 2 0 65%;
+  
 }
 
 .profileInfoContainer button{
-width: 180px;
+width: 200px;
 
 }
 /* Gallery */
@@ -251,4 +232,6 @@ footer{
   background-color: black;
 }
 
-@import 'blogPageStyles'
+@import 'blogPageStyles';
+@import 'contactPageStyles';
+@import 'mediaQuery';
