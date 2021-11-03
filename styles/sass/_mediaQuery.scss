@@ -68,6 +68,52 @@ h1{
   .gallery { flex-direction: column;
     
   }
+  .hamburgerMenu{
+    display: block;
+    
+  }
+
+  
+  .hamburgerMenu.active .bar:nth-child(3){
+    transform:  rotate(360deg);
+    transition: 0.5s ;
+  }
+  .hamburgerMenu.active .bar:nth-child(2){
+    transform: translatey(100px) rotate(180deg);
+    transition: 0.5s;
+    width: 100px;
+  }
+
+  .bar:nth-child(2){
+    transition: 0.5s;
+  }
+
+
+
+  .hamburgerMenu.active .bar:nth-child(1){
+    transform: rotate(360deg);
+    transition: 0.5s ;
+  }
+  .navMenu {
+    position:absolute;
+    right: -150%;
+    top: 150px;
+    background-color: white;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+  }
+.navMenu li {
+  margin: 10px 0px;
+}
+
+.navMenu.active{
+  right: 0%;
+}
+
+
+  
 }
 
 @media (max-width: 576px){

@@ -12,11 +12,12 @@
   <script src="https://kit.fontawesome.com/293860f06a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles/styles.css">
   <title>Project1</title>
+
 </head>
 
 
 <body>
-  <script src="script.js"></script>
+
   <!-- start of header section -->
   <header id="home">
 
@@ -27,16 +28,22 @@
       <!-- start of header wrapper -->
       <!-- start of header navigation section -->
       <nav>
-        <ul>
-          <!-- /* is it okay to flex ul items? */ -->
+        <ul class="navMenu">
+
           <li><a href="#home">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
           <li><a href="blog.html">BLOG</a></li>
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
+        <!-- adding for JS functions assignment -->
+        <div class="hamburgerMenu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
       <div class="container flex">
-        <!-- What should I name these containers? and how many should I have? Do they need to have flex on them if the parent is already a flex container? -->
+
         <h1>captured</h1>
 
         <!-- end of header navigation section -->
@@ -166,5 +173,6 @@
   <!-- end of footer -->
 
 </body>
+<script src="script.js"></script>
 
 </html>
