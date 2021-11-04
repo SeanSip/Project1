@@ -853,34 +853,34 @@ aside {
   .hamburgerMenu.active .bar:nth-child(3) {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
 
   .hamburgerMenu.active .bar:nth-child(2) {
     -webkit-transform: translatey(100px) rotate(180deg);
             transform: translatey(100px) rotate(180deg);
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
     width: 100px;
   }
 
   .bar:nth-child(2) {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
 
   .hamburgerMenu.active .bar:nth-child(1) {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
 
   .navMenu {
     position: absolute;
-    right: -150%;
     top: 150px;
+    right: 0%;
     background-color: white;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -888,8 +888,8 @@ aside {
             flex-direction: column;
     width: 100%;
     text-align: center;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transform: scale(0%);
+            transform: scale(0%);
   }
 
   .navMenu li {
@@ -897,7 +897,11 @@ aside {
   }
 
   .navMenu.active {
-    right: 0%;
+    display: block;
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
 }
 @media (max-width: 576px) {
