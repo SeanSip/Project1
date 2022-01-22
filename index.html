@@ -12,13 +12,12 @@
   <script src="https://kit.fontawesome.com/293860f06a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles/styles.css">
   <title>Project1</title>
+
 </head>
-
-
 <body>
+
   <!-- start of header section -->
   <header id="home">
-
     <div class="wrapper">
       <div class="headerBackground"></div>
       <div class="secondHeaderBackground"></div>
@@ -26,16 +25,22 @@
       <!-- start of header wrapper -->
       <!-- start of header navigation section -->
       <nav>
-        <ul>
-          <!-- /* is it okay to flex ul items? */ -->
+        <ul class="navMenu">
+
           <li><a href="#home">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
           <li><a href="blog.html">BLOG</a></li>
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
+        <!-- adding for JS functions assignment -->
+        <div class="hamburgerMenu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
       <div class="container flex">
-        <!-- What should I name these containers? and how many should I have? Do they need to have flex on them if the parent is already a flex container? -->
+
         <h1>captured</h1>
 
         <!-- end of header navigation section -->
@@ -129,9 +134,13 @@
     <!-- end of about section -->
 
 
+    
+
+
     <section id="topPicks">
-      <img class="banner" src="./captured-final-assets/banner.jpg"
-        alt="A banner image of a camera, pencil, bag, and other accersories layed out ontop of a map">
+      <div class="banner"> </div>
+      <!-- <img class="banner" src="./captured-final-assets/banner.jpg"
+        alt="A banner image of a camera, pencil, bag, and other accersories layed out ontop of a map"> -->
       <!-- Is it okay to put a class on an image? Is this best practice? -->
       <!-- full width banner image for top picks section -->
       <div class="wrapper">
@@ -163,7 +172,8 @@
     Copyright &copy; 2021 Juno College of Technology, Inc.
   </footer>
   <!-- end of footer -->
-
+  <script src="script.js"></script>
 </body>
+
 
 </html>

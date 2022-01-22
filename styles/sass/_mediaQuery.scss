@@ -24,7 +24,6 @@
     .aboutSectionNavContainer{
       flex-wrap: nowrap;
       flex-direction: column;
-      padding: 50px;
     }
 }
 
@@ -58,8 +57,14 @@ h1{
 .aboutContainer, .aboutContainerBottom {
   flex-direction: column;
   padding: 50px;
+}
 
-  
+
+section#topPicks .banner{
+  background-size: none;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
 }
 
 }
@@ -68,8 +73,58 @@ h1{
   .gallery { flex-direction: column;
     
   }
+  .hamburgerMenu{
+    display: block;
+    z-index: 3;
+  }
+
+  
+  .hamburgerMenu.active .bar:nth-child(3){
+    transform:  rotate(360deg);
+    transition: 0.2s ;
+  }
+  .hamburgerMenu.active .bar:nth-child(2){
+    transform: translatey(100px) rotate(180deg);
+    transition: 0.2s;
+    width: 100px;
+  }
+
+  .bar:nth-child(2){
+    transition: 0.2s;
+  }
+
+
+
+  .hamburgerMenu.active .bar:nth-child(1){
+    transform: rotate(360deg);
+    transition: 0.2s ;
+  }
+  .navMenu {
+    position:absolute;
+    top: 150px;
+    right: 0%;
+    background-color: white;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transform: scale(0%);
+  }
+.navMenu li {
+  margin: 10px 0px;
 }
 
+.navMenu.active{
+  background-color: rgba(255, 255, 0, 0.978);
+  z-index: 3;
+  position: fixed;
+  display: block;
+  transform: scale(100%);
+  transition: 0.3s;
+}
+
+
+  
+}
 @media (max-width: 576px){
   .gallery img{
     width: 80%;
