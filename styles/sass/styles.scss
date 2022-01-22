@@ -2,6 +2,7 @@
 @import 'generalStyles';
 @import 'typography';
 
+/* General */
 
 
 /* Header section*/
@@ -41,7 +42,7 @@
 
 
 .container{
-  margin-top: 380px;
+  padding-top: 380px;
   justify-content: center;
   
 }
@@ -74,7 +75,10 @@ h1 {
 .hamburgerMenu{
   display: none;
   cursor: pointer;
-  margin-left: 500px;
+  right: 0;
+  margin-right: 25px;
+  position: fixed;
+  
   padding-top: 50px;
 }
 
@@ -83,7 +87,7 @@ h1 {
   width: 35px;
   height: 5px;
   margin: 5px auto;
-  background-color: red;
+  background-color: yellow;
   border-radius: 10px;
   border: solid 1px black;
 }
@@ -130,14 +134,12 @@ h1 {
 
 .leftImg {
   display: flex;
-  margin-left: -100px;
   flex-basis: 45%;
 }
 
 .rightImg{
   display: flex;
   flex-basis: 45%;
-  margin-right: -100px;
   }
 
 .leftImg img{
@@ -173,6 +175,13 @@ align-self: flex-end;
 
 /* About section nav container */
 
+  section#topPicks .banner{
+  background-image: url(../captured-final-assets/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+}
 
 .aboutSectionNavContainer{
 display: flex;
@@ -180,6 +189,7 @@ flex-wrap: wrap;
 position: relative;
 width: 95%;
 margin: 0 auto;
+
 }
 
 
@@ -204,7 +214,11 @@ i{
 /* top picks section*/
 
 .banner {
+  background-image: url(../captured-final-assets/banner.jpg);
   width: 100%;
+  height: 100%;
+
+
 }
 
 .thisMonthProfile {
