@@ -9,34 +9,41 @@
 
   header {
   position: relative;
+  max-height: 70vh;
   background-repeat: no-repeat;
-  min-height:70vh;
+  
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 250px;
+
+  
 
 }
 
 .headerBackground {
-  width: 100%;
   height: 100%;
   position: absolute;
   z-index: -1;
-  left: 0;
-  top: 0;
   background-image: url(../captured-final-assets/header-image.jpg);  
   background-repeat: no-repeat;
+  
+ 
 }
 
 .secondHeaderBackground {
-  width: 45%;
-  height: 60%;
-  position: absolute;
+  width: 450px;
+  height: 450px;
   z-index: -1;
-  right: 0;
-  bottom: 30px;
+  margin-top: 350px;
+  margin-left: 1000px;
   background:url(../captured-final-assets/header-box-image.jpg) center;
   background-size:cover;
   background-repeat: no-repeat; 
   border: 50px solid yellow;
   border-right: none;
+
+  
+  
   
 }
 
