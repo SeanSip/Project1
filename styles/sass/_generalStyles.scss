@@ -52,16 +52,13 @@ a {
 }
 
 // buttons
-
 button {
   background-color: #4ceea7;
   border: none;
-  height: 40px;
+  padding: 10px;
   margin: 40px 0;
   &:hover{
     background: #008000;
-    border: 5px solid #4cee4c;
-    border-style: inset;
     color: #fafafafa;
     transition: 0.2s;
     cursor: pointer;
