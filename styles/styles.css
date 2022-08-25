@@ -310,7 +310,7 @@ body p {
 }
 
 h1 {
-  font-size: 5.5rem;
+  font-size: 138px;
 }
 
 h2 {
@@ -336,33 +336,28 @@ footer {
 /* General */
 /* Header section*/
 header {
-  position: relative;
-  max-height: 70vh;
+  height: 750px;
   background-repeat: no-repeat;
   margin: 0 auto;
   overflow: hidden;
-  padding-bottom: 250px;
-}
-
-.headerBackground {
-  height: 100%;
-  position: absolute;
-  z-index: -1;
   background-image: url(../captured-final-assets/header-image.jpg);
   background-repeat: no-repeat;
+  background-size: inherit;
+  background-color: rgb(244, 245, 244);
 }
 
 .secondHeaderBackground {
-  width: 450px;
-  height: 450px;
-  z-index: -1;
-  margin-top: 350px;
-  margin-left: 1000px;
+  min-width: 43%;
+  height: 650px;
+  margin-top: 150px;
   background: url(../captured-final-assets/header-box-image.jpg) center;
   background-size: cover;
   background-repeat: no-repeat;
   border: 50px solid yellow;
   border-right: none;
+  position: absolute;
+  right: 0;
+  z-index: 1;
 }
 
 .container {
@@ -393,6 +388,7 @@ a {
 
 h1 {
   margin-top: 50px;
+  z-index: 2;
 }
 
 .hamburgerMenu {
@@ -425,7 +421,7 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%;
-  margin: 0 auto 100px auto;
+  margin: 50px auto 100px auto;
 }
 
 .whatIsContainer p {
