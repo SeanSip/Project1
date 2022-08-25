@@ -37,6 +37,7 @@
     .aboutSectionNavContainer{
       flex-wrap: nowrap;
       flex-direction: column;
+      max-width: 75%;
     }
 }
 
@@ -48,20 +49,24 @@
 }
 
 
-
 @media (max-width: 992px){
 h1{
   margin-bottom: 300px;
 }
+
+.whatIsContainer {
+  width: 100%;
+}
+
 .thisMonthProfile {
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .thisMonthProfile img {
   width: 60%;
   height: auto;
-  margin-left: 200px;
-
+  margin-top: 100px;
 }
 
   .HeaderBackground {

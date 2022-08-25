@@ -833,6 +833,7 @@ aside {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 75%;
   }
 }
 @media (max-width: 1178px) {
@@ -844,16 +845,20 @@ aside {
   h1 {
     margin-bottom: 300px;
   }
+  .whatIsContainer {
+    width: 100%;
+  }
   .thisMonthProfile {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 0 auto;
   }
   .thisMonthProfile img {
     width: 60%;
     height: auto;
-    margin-left: 200px;
+    margin-top: 100px;
   }
   .HeaderBackground {
     width: 50;
