@@ -118,6 +118,10 @@ h1 {
 }
 
 /* main about section content container (middle)*/
+.aboutContainer, .aboutContainerBottom {
+  overflow: hidden ;
+}
+
 .aboutContainer {
   display: flex;
   justify-content: space-between;
@@ -129,6 +133,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   padding: 100px 0px;
+  
 }
 
 .leftImg img {
@@ -144,6 +149,7 @@ h1 {
   margin-right: 180px;
   margin-left: -120px;
   flex: 2 1 700px;
+  overflow: hidden;
 }
 
 .rightImg{
@@ -151,6 +157,7 @@ h1 {
   margin-left: 180px;
   margin-right: -120px;
   flex: 2 1 700px;
+  
   }
 
 .rightAboutContainer, .leftAboutContainer {
@@ -247,7 +254,6 @@ i{
   margin: 10px 35px;
   box-shadow: yellow 20px 30px;
   flex: 1 0;
-  // height: 380px;
   align-self: center;
 }
 
@@ -260,8 +266,8 @@ i{
 
 .profileInfoContainer button{
 width: 200px;
-
 }
+
 /* Gallery */
 
 .gallery {
@@ -272,7 +278,7 @@ width: 200px;
 
 .gallery img{
   margin: 20px;
-  width: 100%;
+  width: 75%;
   flex-wrap: wrap;
 }
 

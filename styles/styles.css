@@ -440,6 +440,10 @@ h1 {
 }
 
 /* main about section content container (middle)*/
+.aboutContainer, .aboutContainerBottom {
+  overflow: hidden;
+}
+
 .aboutContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -484,6 +488,7 @@ h1 {
   -webkit-box-flex: 2;
       -ms-flex: 2 1 700px;
           flex: 2 1 700px;
+  overflow: hidden;
 }
 
 .rightImg {
@@ -636,7 +641,7 @@ i {
 
 .gallery img {
   margin: 20px;
-  width: 100%;
+  width: 75%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -950,6 +955,9 @@ aside {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .hamburgerMenu {
     display: block;

@@ -134,8 +134,9 @@ section#topPicks .banner{
     border-right: none;
   }
 
-  .gallery { flex-direction: column;
-    
+  .gallery { 
+    flex-direction: column;
+    align-items: center;
   }
   .hamburgerMenu{
     display: block;
