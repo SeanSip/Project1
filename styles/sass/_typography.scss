@@ -3,6 +3,12 @@ html {
   font-size: 125%;
 }
 
+// Default margin & padding
+h4 {
+margin: 0;
+padding: 0;  
+}
+
 // Font families
 h1, h2, h3, h4, nav, button {
  font-family: 'Playfair Display', serif;

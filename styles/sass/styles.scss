@@ -122,52 +122,66 @@ h1 {
 .aboutContainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .aboutContainerBottom {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 100px 0px;
+}
+
+.leftImg img {
+  box-shadow: yellow 20px 20px;
+}
+
+.rightImg img {
+  box-shadow: yellow -20px 20px;
 }
 
 .leftImg {
   display: flex;
-  flex-basis: 45%;
+  margin-right: 180px;
+  margin-left: -120px;
+  flex: 2 1 700px;
 }
 
 .rightImg{
   display: flex;
-  flex-basis: 45%;
+  margin-left: 180px;
+  margin-right: -120px;
+  flex: 2 1 700px;
   }
-
-.leftImg img{
-  height: 100%;
-  box-shadow: yellow 20px 20px;
-}
-
-.rightImg img{
-  height: 100%;
-  box-shadow: yellow -20px 20px;
-}
 
 .rightAboutContainer, .leftAboutContainer {
   display: flex;
   flex-direction: column;
-  align-self: center;
-  flex-basis: 38%;
-}
+  }
 
 .leftAboutContainer {
+  text-align: left;
+  flex: 1 2 40%;
+}
+
+.rightAboutContainer {
+  flex: 1 2 40%;
+}
+
+.leftAboutContainer h4 {
   text-align: right;
 }
 
 .rightAboutContainer button {
   width: 150px;
+  margin: 0;
   }
 
 .leftAboutContainer button {
 width: 150px;
 align-self: flex-end;
-}
+margin: 0;
+} 
 
 
 /* About section nav container */
