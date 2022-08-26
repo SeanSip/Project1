@@ -98,8 +98,7 @@ h1 {
   flex-direction: column;
   width: 50%;
   margin: 50px auto 100px auto;
-  
-  
+  padding-top: 120px;
 }
 
 .whatIsContainer p{
@@ -200,7 +199,7 @@ flex-wrap: wrap;
 position: relative;
 width: 95%;
 margin: 0 auto;
-
+padding-bottom: 50px;
 }
 
 
@@ -267,6 +266,8 @@ width: 200px;
 
 .gallery {
   display: flex;
+  padding-bottom: 50px;
+
 }
 
 .gallery img{
