@@ -440,10 +440,6 @@ h1 {
 }
 
 /* main about section content container (middle)*/
-.aboutContainer, .aboutContainerBottom {
-  overflow: hidden;
-}
-
 .aboutContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -484,11 +480,10 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   margin-right: 180px;
-  margin-left: -120px;
+  margin-left: 0px;
   -webkit-box-flex: 2;
-      -ms-flex: 2 1 700px;
-          flex: 2 1 700px;
-  overflow: hidden;
+      -ms-flex: 2 1 600px;
+          flex: 2 1 600px;
 }
 
 .rightImg {
@@ -496,10 +491,9 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   margin-left: 180px;
-  margin-right: -120px;
   -webkit-box-flex: 2;
-      -ms-flex: 2 1 700px;
-          flex: 2 1 700px;
+      -ms-flex: 2 1 600px;
+          flex: 2 1 600px;
 }
 
 .rightAboutContainer, .leftAboutContainer {
@@ -515,14 +509,14 @@ h1 {
 .leftAboutContainer {
   text-align: left;
   -webkit-box-flex: 1;
-      -ms-flex: 1 2 40%;
-          flex: 1 2 40%;
+      -ms-flex: 1 2 42%;
+          flex: 1 2 42%;
 }
 
 .rightAboutContainer {
   -webkit-box-flex: 1;
-      -ms-flex: 1 2 40%;
-          flex: 1 2 40%;
+      -ms-flex: 1 2 45%;
+          flex: 1 2 45%;
 }
 
 .leftAboutContainer h4 {

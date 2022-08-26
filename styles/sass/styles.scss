@@ -118,9 +118,7 @@ h1 {
 }
 
 /* main about section content container (middle)*/
-.aboutContainer, .aboutContainerBottom {
-  overflow: hidden ;
-}
+
 
 .aboutContainer {
   display: flex;
@@ -133,7 +131,6 @@ h1 {
   justify-content: space-between;
   align-items: center;
   padding: 100px 0px;
-  
 }
 
 .leftImg img {
@@ -147,17 +144,15 @@ h1 {
 .leftImg {
   display: flex;
   margin-right: 180px;
-  margin-left: -120px;
-  flex: 2 1 700px;
-  overflow: hidden;
+  margin-left: 0px;
+  flex: 2 1 600px;
 }
 
 .rightImg{
   display: flex;
   margin-left: 180px;
-  margin-right: -120px;
-  flex: 2 1 700px;
-  
+  // margin-right: -120px;
+  flex: 2 1 600px;
   }
 
 .rightAboutContainer, .leftAboutContainer {
@@ -167,11 +162,11 @@ h1 {
 
 .leftAboutContainer {
   text-align: left;
-  flex: 1 2 40%;
+  flex: 1 2 42%;
 }
 
 .rightAboutContainer {
-  flex: 1 2 40%;
+  flex: 1 2 45%;
 }
 
 .leftAboutContainer h4 {
