@@ -10,23 +10,19 @@
   background-size: cover;
 }
 
-.contactText{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 35%;
-  border-left: yellow solid 30px;
-  border-bottom: yellow solid 30px;
-  flex-direction: column;
-  width: 60%;
-  height: 500px;
+.formContainer {
+  border: 30px solid yellow;
+  border-top: none;
+  border-right:none;
+  padding-left: 40px;
+  // this padding is equal to the 40px margin on the bottom for the submit button inside the contact container
+  // position: absolute;
+  margin-top: -200px;
+  background-color: #fafafa;
 }
 
-.contactText button{
-  width: 80%;
+#contact footer {
+  // position: absolute;
+  bottom: 0;
+  width: 100%;
 }
- 
-  
-
- 
-  

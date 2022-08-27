@@ -263,19 +263,6 @@ button:hover {
   cursor: pointer;
 }
 
-textarea {
-  resize: none;
-  border-style: none;
-  border-color: #4CEEA7;
-  border: #4cee4c solid 1px;
-}
-
-input, text {
-  width: 80%;
-  border-style: none;
-  border-bottom: #4cee4c solid 1px;
-}
-
 html {
   font-size: 125%;
 }
@@ -327,6 +314,10 @@ h4, i {
 }
 
 button span {
+  font-size: 18px;
+}
+
+label {
   font-size: 18px;
 }
 
@@ -780,29 +771,6 @@ aside {
   height: 100px;
 }
 
-.blogText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 90%;
-}
-
-.textButton {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.blogText button {
-  width: 100%;
-}
-
 #contact h2 {
   margin-top: 250px;
   text-align: center;
@@ -813,29 +781,18 @@ aside {
   background-size: cover;
 }
 
-.contactText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 35%;
-  border-left: yellow solid 30px;
-  border-bottom: yellow solid 30px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 60%;
-  height: 500px;
+.formContainer {
+  border: 30px solid yellow;
+  border-top: none;
+  border-right: none;
+  padding-left: 40px;
+  margin-top: -200px;
+  background-color: #fafafa;
 }
 
-.contactText button {
-  width: 80%;
+#contact footer {
+  bottom: 0;
+  width: 100%;
 }
 
 @media (max-width: 1520px) {
@@ -909,23 +866,27 @@ aside {
   .HeaderBackground {
     width: 50;
   }
-  .aboutContainer, .aboutContainerBottom {
+  .aboutContainer,
+.aboutContainerBottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
   }
-  .aboutContainer p, .aboutContainerBottom p {
+  .aboutContainer p,
+.aboutContainerBottom p {
     text-align: left;
   }
   .aboutContainerBottom h4 {
     text-align: center;
   }
-  .rightAboutContainer button, .leftAboutContainer button {
+  .rightAboutContainer button,
+.leftAboutContainer button {
     margin: 0 auto;
   }
-  .leftImg, .rightImg {
+  .leftImg,
+.rightImg {
     margin: 0 auto;
   }
   .leftImg {
@@ -1057,4 +1018,77 @@ aside {
     border: 20px solid yellow;
     border-right: none;
   }
+}
+textarea {
+  resize: none;
+  border-style: none;
+  border-color: #4CEEA7;
+  border: #4cee4c solid 1px;
+}
+
+.message label {
+  position: absolute;
+  margin: 25px;
+}
+
+input, text {
+  border-style: none;
+  border-bottom: #4cee4c solid 1px;
+  margin-top: 10px;
+}
+
+.name, .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 48%;
+  margin: 40px 0;
+}
+
+.name label, .email label {
+  margin-left: 5px;
+}
+
+.nameEmailContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+}
+
+textarea {
+  padding: 70px;
+}
+
+.textButton {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blogText button {
+  width: 100%;
 }

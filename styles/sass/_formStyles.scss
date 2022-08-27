@@ -1,0 +1,61 @@
+textarea{
+  resize: none;
+  border-style: none;
+  border-color: #4CEEA7;
+  border: #4cee4c solid 1px;
+  
+    }
+
+.message label {
+  position: absolute;
+  margin: 25px;
+}
+
+
+  input, text {
+  
+  border-style: none;
+  border-bottom: #4cee4c solid 1px;
+  margin-top: 10px;
+    }
+
+.name, .email {
+  display: flex;
+  align-content: space-around;
+  flex-direction: column;
+  width: 48%;
+  margin: 40px 0;
+  
+}
+
+.name label, .email label {
+  margin-left: 5px;
+}
+
+
+.nameEmailContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.blogText {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+}
+
+textarea {
+  padding: 70px;
+}
+
+
+.textButton {
+flex-direction: column;
+}
+
+.blogText button{
+  width: 100%;
+}
