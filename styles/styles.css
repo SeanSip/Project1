@@ -1198,3 +1198,8 @@ text {
     font-size: 1.3rem;
   }
 }
+@media (max-width: 378px) {
+  .formContainer {
+    margin-top: -100px;
+  }
+}
