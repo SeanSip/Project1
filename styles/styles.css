@@ -456,9 +456,6 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -603,11 +600,10 @@ i {
   margin: 10px 35px;
   -webkit-box-shadow: yellow 20px 30px;
           box-shadow: yellow 20px 30px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0;
-          flex: 1 0;
+  width: 400px;
   -ms-flex-item-align: center;
       align-self: center;
+  margin-right: 100px;
 }
 
 .profileInfoContainer {
@@ -615,10 +611,10 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 50px;
   -webkit-box-flex: 2;
       -ms-flex: 2 0 65%;
           flex: 2 0 65%;
+  margin-top: 50px;
 }
 
 .profileInfoContainer button {

@@ -128,7 +128,6 @@ h1 {
 
 .aboutContainerBottom {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 100px 0px;
 }
@@ -151,7 +150,6 @@ h1 {
 .rightImg{
   display: flex;
   margin-left: 180px;
-  // margin-right: -120px;
   flex: 2 1 600px;
   }
 
@@ -241,22 +239,23 @@ i{
 .thisMonthProfile {
   display: flex;
   margin: 50px 0;
-  
 }
 
 .thisMonthProfile img{
   display: flex;
   margin: 10px 35px;
   box-shadow: yellow 20px 30px;
-  flex: 1 0;
+  // flex: 1 0;
+  width: 400px;
+  // height: 100%;
   align-self: center;
+  margin-right: 100px;
 }
 
 .profileInfoContainer {
   flex-direction: column;
-  padding: 50px;
   flex: 2 0 65%;
-  
+  margin-top: 50px;
 }
 
 .profileInfoContainer button{
