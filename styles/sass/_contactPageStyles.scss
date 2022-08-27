@@ -1,6 +1,6 @@
 
 
-#contact h2{
+#contact h2 {
   margin-top: 250px;
   text-align: center;
 }
@@ -10,19 +10,35 @@
   background-size: cover;
 }
 
+#contact h4 {
+  margin-bottom: 30px;
+}
+
+.socialsContainer {
+  margin-top: 150px;
+  margin-right: 50px;
+}
+
 .formContainer {
+  width: 100%;
   border: 30px solid yellow;
   border-top: none;
-  border-right:none;
+  border-right: none;
   padding-left: 40px;
   // this padding is equal to the 40px margin on the bottom for the submit button inside the contact container
   // position: absolute;
+  padding-right: 40px;
   margin-top: -200px;
   background-color: #fafafa;
 }
 
+.contactContainer {
+  display: flex;
+  margin-bottom: 100px;
+}
+
 #contact footer {
-  // position: absolute;
-  bottom: 0;
+  left: 0;
+  right: 0;
   width: 100%;
 }

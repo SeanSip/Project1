@@ -1,54 +1,44 @@
-@import 'normalized';
-@import 'generalStyles';
-@import 'typography';
-
+@import "normalized";
+@import "generalStyles";
+@import "typography";
 
 /* General */
 
-
 /* Header section*/
 
-  header {
-
+header {
   height: 750px;
   background-repeat: no-repeat;
   margin: 0 auto;
   overflow: hidden;
-  background-image: url(../captured-final-assets/header-image.jpg);  
+  background-image: url(../captured-final-assets/header-image.jpg);
   background-repeat: no-repeat;
   background-size: inherit;
   background-color: rgb(244, 245, 244);
 }
 
-
 .secondHeaderBackground {
   min-width: 43%;
   height: 650px;
   margin-top: 150px;
-  background:url(../captured-final-assets/header-box-image.jpg) center;
-  background-size:cover;
-  background-repeat: no-repeat; 
+  background: url(../captured-final-assets/header-box-image.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border: 50px solid yellow;
   border-right: none;
   position: absolute;
   right: 0;
   z-index: 1;
-  
 }
 
-
-.container{
+.container {
   padding-top: 380px;
   justify-content: center;
-  
 }
-
-
 
 /* Header navigation menu*/
 
-
-ul{
+ul {
   display: flex;
   justify-content: flex-end;
 }
@@ -63,23 +53,23 @@ a {
 }
 
 h1 {
- margin-top: 50px;
- z-index: 2;
+  margin-top: 50px;
+  z-index: 2;
 }
 
 // hamburger menu bar navigation
 
-.hamburgerMenu{
+.hamburgerMenu {
   display: none;
   cursor: pointer;
   right: 0;
+  top: 0;
+  padding-top: 20px;
   margin-right: 25px;
   position: fixed;
-  margin-top: -125px;
-
 }
 
-.bar{
+.bar {
   display: block;
   width: 35px;
   height: 5px;
@@ -89,12 +79,10 @@ h1 {
   border: solid 1px black;
 }
 
-
 /* About Section*/
 
-
 /* about section top information container */
-.whatIsContainer{
+.whatIsContainer {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -102,16 +90,13 @@ h1 {
   padding-top: 120px;
 }
 
-.whatIsContainer p{
-  
+.whatIsContainer p {
   text-align: left;
-  
 }
 
-.whatIsContainer h3{
+.whatIsContainer h3 {
   text-align: center;
 }
-
 
 .whatIsContainer button {
   width: 200px;
@@ -119,7 +104,6 @@ h1 {
 }
 
 /* main about section content container (middle)*/
-
 
 .aboutContainer {
   display: flex;
@@ -148,16 +132,17 @@ h1 {
   flex: 2 1 600px;
 }
 
-.rightImg{
+.rightImg {
   display: flex;
   margin-left: 180px;
   flex: 2 1 600px;
-  }
+}
 
-.rightAboutContainer, .leftAboutContainer {
+.rightAboutContainer,
+.leftAboutContainer {
   display: flex;
   flex-direction: column;
-  }
+}
 
 .leftAboutContainer {
   text-align: left;
@@ -175,18 +160,17 @@ h1 {
 .rightAboutContainer button {
   width: 150px;
   margin: 0;
-  }
+}
 
 .leftAboutContainer button {
-width: 150px;
-align-self: flex-end;
-margin: 0;
-} 
-
+  width: 150px;
+  align-self: flex-end;
+  margin: 0;
+}
 
 /* About section nav container */
 
-  section#topPicks .banner{
+section#topPicks .banner {
   background-image: url(../captured-final-assets/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -194,24 +178,25 @@ margin: 0;
   height: 400px;
 }
 
-.aboutSectionNavContainer{
-display: flex;
-flex-wrap: wrap;
-position: relative;
-width: 95%;
-margin: 0 auto;
-padding-bottom: 50px;
+.aboutSectionNavContainer {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 
-
-.topPicksContainer, .communityContainer, .blogContainer, .getInTouchContainer{
+.topPicksContainer,
+.communityContainer,
+.blogContainer,
+.getInTouchContainer {
   flex-direction: column;
-  flex:1 0 35%;
+  flex: 1 0 35%;
   margin: 25px;
 }
 
-
-i{
+i {
   border-radius: 30px;
 }
 
@@ -235,7 +220,6 @@ i{
   margin-top: 10px;
 }
 
-
 /* top picks section*/
 
 .banner {
@@ -249,7 +233,7 @@ i{
   margin: 50px 0;
 }
 
-.thisMonthProfile img{
+.thisMonthProfile img {
   display: flex;
   margin: 10px 35px;
   box-shadow: yellow 20px 30px;
@@ -264,8 +248,8 @@ i{
   margin-top: 50px;
 }
 
-.profileInfoContainer button{
-width: 200px;
+.profileInfoContainer button {
+  width: 200px;
 }
 
 /* Gallery */
@@ -273,23 +257,23 @@ width: 200px;
 .gallery {
   display: flex;
   padding-bottom: 50px;
-
 }
 
-.gallery img{
+.gallery img {
   margin: 20px;
   width: 75%;
   flex-wrap: wrap;
 }
 
 /* footer section*/
-footer{
+footer {
   text-align: center;
   padding: 5px 0;
   background-color: black;
 }
 
-@import 'blogPageStyles';
-@import 'contactPageStyles';
-@import 'mediaQuery';
-@import 'formStyles';
+@import "blogPageStyles";
+@import "contactPageStyles";
+@import "formStyles";
+@import "mediaQuery";
+@import "contactPageMediaQuery";

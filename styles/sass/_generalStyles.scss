@@ -1,20 +1,20 @@
+body {
+  position: relative;
+}
 
 ul {
   margin: 0;
   padding: 0;
 }
 
-a:hover{
-  border-bottom: #4CEEA7 3px solid;
+a:hover {
+  border-bottom: #4ceea7 3px solid;
   transition: 0.3s;
   color: #4cee4c;
-
 }
 
-
-
-
-  h1, h3{
+h1,
+h3 {
   margin: 0;
   padding: 0;
 }
@@ -24,7 +24,7 @@ img {
   height: auto;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
@@ -33,7 +33,6 @@ img {
   width: 90%;
   margin: 0 auto;
 }
-
 
 .grid {
   display: grid;
@@ -54,12 +53,10 @@ button {
   border: none;
   padding: 10px;
   margin: 40px 0;
-  &:hover{
+  &:hover {
     background: #008000;
     color: #fafafafa;
     transition: 0.2s;
     cursor: pointer;
-    }
   }
-
-
+}

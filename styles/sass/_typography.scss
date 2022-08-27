@@ -4,7 +4,7 @@ html {
 }
 
 // Default margin & padding
-h4 {
+h4, #contact p {
 margin: 0;
 padding: 0;  
 }
@@ -28,7 +28,7 @@ h3, nav, button {
 // line heights
 
 body p, button {
-  line-height: 1.6rem;
+  line-height: 32px;
 }
 
 nav{
@@ -38,7 +38,7 @@ nav{
 // Text sizes 
 
 body p{
-  font-size: 1rem ;
+  font-size: 20px ;
 }
 
 h1 {
