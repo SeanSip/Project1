@@ -211,18 +211,27 @@ padding-bottom: 50px;
 
 
 i{
-  position: relative;
-  margin: 13px;
   border-radius: 30px;
 }
 
 .circle {
-  position: absolute;
-  margin: 40px -75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 60px;
   height: 60px;
   background-color: rgba($color: #4ceea4, $alpha: 0.5);
   border-radius: 30px;
+  margin-right: 15px;
+}
+
+.aboutSectionTitleContainer {
+  display: flex;
+  align-content: center;
+}
+
+.aboutSectionTitleContainer h4 {
+  margin-top: 10px;
 }
 
 
@@ -232,8 +241,6 @@ i{
   background-image: url(../captured-final-assets/banner.jpg);
   width: 100%;
   height: 100%;
-
-
 }
 
 .thisMonthProfile {
@@ -245,9 +252,7 @@ i{
   display: flex;
   margin: 10px 35px;
   box-shadow: yellow 20px 30px;
-  // flex: 1 0;
   width: 400px;
-  // height: 100%;
   align-self: center;
   margin-right: 100px;
 }
