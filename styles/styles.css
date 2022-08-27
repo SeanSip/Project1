@@ -1202,4 +1202,8 @@ text {
   .formContainer {
     margin-top: -100px;
   }
+  #contact h2 {
+    width: 100%;
+    margin: 100px auto;
+  }
 }
