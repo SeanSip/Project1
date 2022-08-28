@@ -1047,28 +1047,24 @@ text {
     display: block;
     z-index: 3;
   }
+  .hamburgerMenu .bar {
+    -webkit-transition: 0.2s ease-in-out all;
+    transition: 0.2s ease-in-out all;
+  }
   .hamburgerMenu.active .bar:nth-child(3) {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
+    -webkit-transform: translatex(-8px) translatey(0px) rotate(-130deg);
+            transform: translatex(-8px) translatey(0px) rotate(-130deg);
   }
   .hamburgerMenu.active .bar:nth-child(2) {
     -webkit-transform: translatey(100px) rotate(180deg);
             transform: translatey(100px) rotate(180deg);
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    width: 100px;
-  }
-  .bar:nth-child(2) {
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
+    width: 50px;
+    margin-right: 10px;
+    background-color: black;
   }
   .hamburgerMenu.active .bar:nth-child(1) {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
+    -webkit-transform: translatex(-8px) translatey(24px) rotate(130deg);
+            transform: translatex(-8px) translatey(24px) rotate(130deg);
   }
   .navMenu {
     position: absolute;
@@ -1083,6 +1079,8 @@ text {
     text-align: center;
     -webkit-transform: scale(0%);
             transform: scale(0%);
+    -webkit-transition: 0.2s ease-in-out all;
+    transition: 0.2s ease-in-out all;
   }
   .navMenu li {
     margin: 10px 0px;
@@ -1097,8 +1095,6 @@ text {
     display: block;
     -webkit-transform: scale(100%);
             transform: scale(100%);
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
   }
 }
 @media (max-width: 692px) {
