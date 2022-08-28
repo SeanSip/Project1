@@ -137,24 +137,46 @@
                   eius!</p>
               </div>
             </div>
-            <!-- start of text field -->
-            <form class="blogText">
+            <!-- start of form -->
+          <form class="formText blogForm">
+          <div class="formContainer">
+            <div class="nameEmailContainer">
               <div class="name">
                 <label for="username">Name</label>
-                <input type="text" name="username" id="username" required>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="Cam Corder"
+                  required
+                />
               </div>
               <div class="email">
                 <label for="email">Email address</label>
-                <input type="email" name="email" id="email" required>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="camcorder@captured.com"
+                  required
+                />
               </div>
-              <div class="textButton">
-                <label for="message">Message</label>
-                <textarea id="comment" name="comment" cols="90" rows="10" required></textarea>
-              </div>
-
-              <button type="submit">submit</button>
-            </form>
+            </div>
+            <div class="message">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                cols="90"
+                rows="10"
+                required
+              >
+              </textarea>
+            </div>
+            <button type="submit">submit</button>
           </div>
+        </form>
+            
 
         </div>
         <!-- end of right container -->

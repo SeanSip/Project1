@@ -1,3 +1,4 @@
+// Form for contact page
 textarea {
   resize: none;
   border-style: none;
@@ -5,7 +6,6 @@ textarea {
   border: #4cee4c solid 1px;
   width: 100%;
 }
-
 
 .message label {
   position: absolute;
@@ -43,7 +43,6 @@ text {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 80%;
   margin: 0 auto;
 }
 
@@ -54,3 +53,11 @@ text {
 .formText button {
   width: 101%;
 }
+
+// Form for blog page
+.blogForm .formContainer {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
