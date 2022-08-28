@@ -747,6 +747,11 @@ aside {
   text-align: left;
 }
 
+aside img {
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+
 .aboutCapture,
 .recentPosts {
   display: -webkit-box;

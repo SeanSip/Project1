@@ -40,9 +40,6 @@
   width: 90%;
 }
 
-.rightBlogPostContainer h3 {
-}
-
 /* Aside content*/
 
 aside ul {
@@ -64,6 +61,11 @@ aside {
   flex-direction: column;
   width: 45%;
   text-align: left;
+}
+
+aside img {
+  margin-top: 75px;
+  margin-bottom: 50px;
 }
 
 .aboutCapture,
