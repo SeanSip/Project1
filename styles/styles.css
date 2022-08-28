@@ -1056,8 +1056,8 @@ text {
             transform: translatex(-8px) translatey(0px) rotate(-130deg);
   }
   .hamburgerMenu.active .bar:nth-child(2) {
-    -webkit-transform: translatey(100px) rotate(180deg);
-            transform: translatey(100px) rotate(180deg);
+    -webkit-transform: translatey(50px) rotate(180deg);
+            transform: translatey(50px) rotate(180deg);
     width: 50px;
     margin-right: 10px;
     background-color: black;
@@ -1067,8 +1067,8 @@ text {
             transform: translatex(-8px) translatey(24px) rotate(130deg);
   }
   .navMenu {
-    position: absolute;
-    top: 150px;
+    position: fixed;
+    top: 100px;
     right: 0%;
     background-color: white;
     -webkit-box-orient: vertical;
