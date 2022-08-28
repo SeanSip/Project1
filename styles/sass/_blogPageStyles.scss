@@ -1,73 +1,62 @@
 /* start of blog page*/
- 
 
-
-
-
-#blog{ background-image: url(../captured-final-assets/blog-header.jpg);
- background-repeat: no-repeat;
- background-size: cover;
- 
+#blog {
+  background-image: url(../captured-final-assets/blog-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-
- #blog h2 {
-text-align: center;
-padding-top: 320px;
- }
- 
+#blog h2 {
+  text-align: center;
+}
 
 /* main content and aside container */
 .blogPostMainContainer {
   display: flex;
- 
 }
-
-
 
 /* Main blog content*/
 
-.rightBlogPostContainer {
-  display: flex;
-  flex-direction: column;
-  
-  width: 80%;
-  margin-top: -420px;
-  padding-left: 100px;
-  
+.rightBlogPostContainer img {
+  margin-top: -250px;
+
+  max-width: 90%;
+  margin-bottom: 50px;
+  box-shadow: yellow -40px 40px;
+  z-index: 1;
 }
 
-.blogText{
+.rightBlogPostContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding-left: 100px;
+  align-items: flex-end;
+}
+
+.blogText {
   margin-top: 80px;
   width: 90%;
 }
 
-
-
-.rightBlogPostContainer h3{
-  margin-right: 135px;
+.rightBlogPostContainer h3 {
 }
 
+/* Aside content*/
 
-.rightBlogPostContainer img{
-  box-shadow: yellow -40px 40px;
-  z-index: 1;
-  width: 100%;
-
-}
-
- /* Aside content*/
-
-
- aside ul {
+aside ul {
   flex-direction: column;
- }
+}
 
- aside li {
- padding: 10px 0;
- }
+aside li {
+  padding: 10px 0;
+}
 
- aside li::before {content: "•"; color: #4CEEA7;
+aside li::before {
+  content: "•";
+  color: #4ceea7;
   margin-right: 10px;
 }
 
@@ -78,34 +67,24 @@ aside {
   text-align: left;
 }
 
-
-.aboutCapture, .recentPosts{
+.aboutCapture,
+.recentPosts {
   display: flex;
   flex-direction: column;
   width: 68%;
   align-self: center;
 }
 
-
-
 /* comment section */
 
-.topComment, .bottomComment {
+.topComment,
+.bottomComment {
   display: flex;
   width: 90%;
   margin: 20px 0;
-
 }
 
 .topComment img {
- margin-right: 50px;
- margin-top: 25px;
- box-shadow: none;
- width: 100px;
- height: 100px;
-}
-
-.bottomComment img{
   margin-right: 50px;
   margin-top: 25px;
   box-shadow: none;
@@ -113,5 +92,10 @@ aside {
   height: 100px;
 }
 
-
-
+.bottomComment img {
+  margin-right: 50px;
+  margin-top: 25px;
+  box-shadow: none;
+  width: 100px;
+  height: 100px;
+}

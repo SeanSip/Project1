@@ -39,7 +39,7 @@ text {
   justify-content: space-between;
 }
 
-.blogText {
+.formText {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -51,6 +51,6 @@ text {
   flex-direction: column;
 }
 
-.blogText button {
-  width: 100%;
+.formText button {
+  width: 101%;
 }

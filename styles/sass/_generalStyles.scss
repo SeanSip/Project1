@@ -56,7 +56,10 @@ button {
   &:hover {
     background: #008000;
     color: #fafafafa;
-    transition: 0.2s;
     cursor: pointer;
+    &:active {
+      box-shadow: 0px 0px 5px 10px #fdfa69;
+      color: #fdfa69;
+    }
   }
 }

@@ -263,9 +263,12 @@ button {
 button:hover {
   background: #008000;
   color: rgba(250, 250, 250, 0.9803921569);
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
   cursor: pointer;
+}
+button:hover:active {
+  -webkit-box-shadow: 0px 0px 5px 10px #fdfa69;
+          box-shadow: 0px 0px 5px 10px #fdfa69;
+  color: #fdfa69;
 }
 
 html {
@@ -669,11 +672,11 @@ footer {
   background-image: url(../captured-final-assets/blog-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 #blog h2 {
   text-align: center;
-  padding-top: 320px;
 }
 
 /* main content and aside container */
@@ -684,7 +687,17 @@ footer {
 }
 
 /* Main blog content*/
+.rightBlogPostContainer img {
+  margin-top: -250px;
+  max-width: 90%;
+  margin-bottom: 50px;
+  -webkit-box-shadow: yellow -40px 40px;
+          box-shadow: yellow -40px 40px;
+  z-index: 1;
+}
+
 .rightBlogPostContainer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -693,24 +706,15 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 80%;
-  margin-top: -420px;
   padding-left: 100px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .blogText {
   margin-top: 80px;
   width: 90%;
-}
-
-.rightBlogPostContainer h3 {
-  margin-right: 135px;
-}
-
-.rightBlogPostContainer img {
-  -webkit-box-shadow: yellow -40px 40px;
-          box-shadow: yellow -40px 40px;
-  z-index: 1;
-  width: 100%;
 }
 
 /* Aside content*/
@@ -727,7 +731,7 @@ aside li {
 
 aside li::before {
   content: "•";
-  color: #4CEEA7;
+  color: #4ceea7;
   margin-right: 10px;
 }
 
@@ -743,7 +747,8 @@ aside {
   text-align: left;
 }
 
-.aboutCapture, .recentPosts {
+.aboutCapture,
+.recentPosts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -757,7 +762,8 @@ aside {
 }
 
 /* comment section */
-.topComment, .bottomComment {
+.topComment,
+.bottomComment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -876,7 +882,7 @@ text {
           justify-content: space-between;
 }
 
-.blogText {
+.formText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -896,8 +902,8 @@ text {
           flex-direction: column;
 }
 
-.blogText button {
-  width: 100%;
+.formText button {
+  width: 101%;
 }
 
 @media (max-width: 1520px) {
