@@ -1,0 +1,44 @@
+@media (max-width: 800px) {
+  .blogPostMainContainer {
+    flex-direction: column;
+  }
+  aside {
+    width: 100%;
+  }
+
+  aside img {
+    width: 60%;
+    margin: -100px auto 0px auto;
+  }
+
+  .aboutCapture {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .recentPosts {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .rightBlogPostContainer {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .rightBlogPostContainer img {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 550px) {
+  .topComment,
+  .bottomComment {
+    flex-direction: column;
+  }
+
+  .topComment img,
+  .bottomComment img {
+    margin: 20px 0;
+  }
+}
