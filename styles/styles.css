@@ -276,12 +276,18 @@ html {
   font-size: 125%;
 }
 
-h4, #contact p {
+h4,
+#contact p {
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3, h4, nav, button {
+h1,
+h2,
+h3,
+h4,
+nav,
+button {
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
 }
@@ -290,11 +296,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h3, nav, button {
+h3,
+nav,
+button {
   letter-spacing: 0.05rem;
 }
 
-body p, button {
+body p,
+button {
   line-height: 32px;
 }
 
@@ -318,7 +327,8 @@ h3 {
   font-size: 2.1rem;
 }
 
-h4, i {
+h4,
+i {
   font-size: 1.6rem;
 }
 
@@ -843,11 +853,6 @@ textarea {
   border-color: #4ceea7;
   border: #4cee4c solid 1px;
   width: 100%;
-}
-
-.message label {
-  position: absolute;
-  margin: 25px;
 }
 
 input,

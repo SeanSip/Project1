@@ -51,38 +51,39 @@
           <p>Toronto, Ontario</p>
           <p>M5V2D5</p>
         </div>
-        
+
         <form class="formText">
           <div class="formContainer">
             <div class="nameEmailContainer">
               <div class="name">
-                <label for="username">Name</label>
+                <label class="sr-only" for="username">Enter your name</label>
                 <input
                   type="text"
                   name="username"
                   id="username"
-                  placeholder="Cam Corder"
+                  placeholder="Name"
                   required
                 />
               </div>
               <div class="email">
-                <label for="email">Email address</label>
+                <label class="sr-only" for="email">Enter your email</label>
                 <input
                   type="email"
                   name="email"
                   id="email"
-                  placeholder="camcorder@captured.com"
+                  placeholder="Email"
                   required
                 />
               </div>
             </div>
             <div class="message">
-              <label for="message">Message</label>
+              <label class="sr-only" for="message">Enter your message</label>
               <textarea
                 id="message"
                 name="message"
                 cols="90"
                 rows="10"
+                placeholder="Message"
                 required
               >
               </textarea>

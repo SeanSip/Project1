@@ -1,44 +1,52 @@
-
 html {
   font-size: 125%;
 }
 
 // Default margin & padding
-h4, #contact p {
-margin: 0;
-padding: 0;  
+h4,
+#contact p {
+  margin: 0;
+  padding: 0;
 }
 
 // Font families
-h1, h2, h3, h4, nav, button {
- font-family: 'Playfair Display', serif;
- text-transform: uppercase;
+h1,
+h2,
+h3,
+h4,
+nav,
+button {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-// Letter spacing 
+// Letter spacing
 
-h3, nav, button {
+h3,
+nav,
+button {
   letter-spacing: 0.05rem;
 }
 
 // line heights
 
-body p, button {
+body p,
+button {
   line-height: 32px;
 }
 
-nav{
+nav {
   line-height: 1.45rem;
 }
 
-// Text sizes 
+// Text sizes
 
-body p{
-  font-size: 20px ;
+body p {
+  font-size: 20px;
 }
 
 h1 {
@@ -46,14 +54,15 @@ h1 {
 }
 
 h2 {
-font-size: 4rem;
+  font-size: 4rem;
 }
 
 h3 {
   font-size: 2.1rem;
 }
 
-h4, i {
+h4,
+i {
   font-size: 1.6rem;
 }
 
@@ -62,14 +71,11 @@ button span {
 }
 
 label {
-  font-size: 18px; 
+  font-size: 18px;
 }
-
 
 // Font color
 
 footer {
-color: white;
+  color: white;
 }
-
-
