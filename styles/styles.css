@@ -663,13 +663,12 @@ i {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 50px;
+  max-width: 100%;
 }
 
 .gallery img {
   margin: 20px;
   width: 75%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 /* footer section*/
