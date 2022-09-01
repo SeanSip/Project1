@@ -258,12 +258,13 @@ i {
 .gallery {
   display: flex;
   padding-bottom: 50px;
-  max-width: 100%;
+  width: 100%;
+  justify-content: center;
 }
 
 .gallery img {
   margin: 20px;
-  width: 75%;
+  max-width: 30%;
 }
 
 /* footer section*/
