@@ -183,6 +183,7 @@
     transform: scale(0%);
     transition: 0.2s ease-in-out all;
   }
+
   .navMenu li {
     margin: 10px 0px;
   }
@@ -195,6 +196,7 @@
     z-index: 3;
     position: fixed;
     display: block;
+    padding: 0px;
     transform: scale(100%);
   }
 }

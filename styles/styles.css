@@ -400,7 +400,7 @@ ul {
   top: 0;
   right: 0;
   z-index: 5;
-  padding-right: 20px;
+  padding-right: 80px;
 }
 
 li {
@@ -1139,6 +1139,7 @@ text {
     z-index: 3;
     position: fixed;
     display: block;
+    padding: 0px;
     -webkit-transform: scale(100%);
             transform: scale(100%);
   }
