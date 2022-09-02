@@ -1064,18 +1064,6 @@ text {
     width: 100%;
     height: 200px;
   }
-  .gallery {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .gallery img {
-    max-width: 100%;
-  }
 }
 @media (max-width: 768px) {
   header {
@@ -1088,15 +1076,6 @@ text {
     height: 350px;
     border: 40px solid #fdfa69;
     border-right: none;
-  }
-  .gallery {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .hamburgerMenu {
     display: block;

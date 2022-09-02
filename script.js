@@ -11,3 +11,4 @@ hamburgerMenu.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   navMenu.classList.toggle("sticky", window.scrollY > 0)
 })
+
