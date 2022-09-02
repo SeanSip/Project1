@@ -7,6 +7,7 @@
 }
 
 #blog h2 {
+  margin-top: 140px;
   text-align: center;
 }
 
@@ -42,15 +43,17 @@
 
 /* Aside content*/
 
-aside ul {
+.recentPosts ul {
   flex-direction: column;
+  position: relative;
+  z-index: 1;
 }
 
-aside li {
+.recentPosts li {
   padding: 10px 0;
 }
 
-aside li::before {
+.recentPosts li::before {
   content: "•";
   color: #4ceea7;
   margin-right: 10px;

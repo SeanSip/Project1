@@ -17,6 +17,13 @@ header {
   background-color: rgb(244, 245, 244);
 }
 
+.navMenu.sticky {
+  background-color: rgb(255, 255, 0);
+  box-shadow: #2c2c2c84 0px 0px 10px 0px;
+  width: 100%;
+  transition: 0.3s ease-in;
+}
+
 .secondHeaderBackground {
   min-width: 43%;
   height: 650px;
@@ -24,7 +31,7 @@ header {
   background: url(../captured-final-assets/header-box-image.jpg) center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 50px solid yellow;
+  border: 50px solid #fdfa69;
   border-right: none;
   position: absolute;
   right: 0;
@@ -41,19 +48,26 @@ header {
 ul {
   display: flex;
   justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  padding-right: 20px;
 }
 
 li {
   padding: 20px;
   justify-items: space-evenly;
+  position: relative;
 }
 
 a {
+  position: relative;
   color: #2c2c2c;
 }
 
 h1 {
-  margin-top: 50px;
+  margin-top: 110px;
   z-index: 2;
 }
 
@@ -74,7 +88,7 @@ h1 {
   width: 35px;
   height: 5px;
   margin: 5px auto;
-  background-color: yellow;
+  background-color: #fdfa69;
   border-radius: 10px;
   border: solid 1px black;
 }
@@ -118,11 +132,11 @@ h1 {
 }
 
 .leftImg img {
-  box-shadow: yellow 20px 20px;
+  box-shadow: #fdfa69 20px 20px;
 }
 
 .rightImg img {
-  box-shadow: yellow -20px 20px;
+  box-shadow: #fdfa69 -20px 20px;
 }
 
 .leftImg {
@@ -237,7 +251,7 @@ i {
 .thisMonthProfile img {
   display: flex;
   margin: 10px 35px;
-  box-shadow: yellow 20px 30px;
+  box-shadow: #fdfa69 20px 30px;
   width: 400px;
   align-self: center;
   margin-right: 100px;

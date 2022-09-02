@@ -358,6 +358,15 @@ header {
   background-color: rgb(244, 245, 244);
 }
 
+.navMenu.sticky {
+  background-color: rgb(255, 255, 0);
+  -webkit-box-shadow: rgba(44, 44, 44, 0.5176470588) 0px 0px 10px 0px;
+          box-shadow: rgba(44, 44, 44, 0.5176470588) 0px 0px 10px 0px;
+  width: 100%;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
 .secondHeaderBackground {
   min-width: 43%;
   height: 650px;
@@ -365,7 +374,7 @@ header {
   background: url(../captured-final-assets/header-box-image.jpg) center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 50px solid yellow;
+  border: 50px solid #fdfa69;
   border-right: none;
   position: absolute;
   right: 0;
@@ -387,19 +396,26 @@ ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  padding-right: 20px;
 }
 
 li {
   padding: 20px;
   justify-items: space-evenly;
+  position: relative;
 }
 
 a {
+  position: relative;
   color: #2c2c2c;
 }
 
 h1 {
-  margin-top: 50px;
+  margin-top: 110px;
   z-index: 2;
 }
 
@@ -418,7 +434,7 @@ h1 {
   width: 35px;
   height: 5px;
   margin: 5px auto;
-  background-color: yellow;
+  background-color: #fdfa69;
   border-radius: 10px;
   border: solid 1px black;
 }
@@ -475,13 +491,13 @@ h1 {
 }
 
 .leftImg img {
-  -webkit-box-shadow: yellow 20px 20px;
-          box-shadow: yellow 20px 20px;
+  -webkit-box-shadow: #fdfa69 20px 20px;
+          box-shadow: #fdfa69 20px 20px;
 }
 
 .rightImg img {
-  -webkit-box-shadow: yellow -20px 20px;
-          box-shadow: yellow -20px 20px;
+  -webkit-box-shadow: #fdfa69 -20px 20px;
+          box-shadow: #fdfa69 -20px 20px;
 }
 
 .leftImg {
@@ -634,8 +650,8 @@ i {
   display: -ms-flexbox;
   display: flex;
   margin: 10px 35px;
-  -webkit-box-shadow: yellow 20px 30px;
-          box-shadow: yellow 20px 30px;
+  -webkit-box-shadow: #fdfa69 20px 30px;
+          box-shadow: #fdfa69 20px 30px;
   width: 400px;
   -ms-flex-item-align: center;
       align-self: center;
@@ -689,6 +705,7 @@ footer {
 }
 
 #blog h2 {
+  margin-top: 140px;
   text-align: center;
 }
 
@@ -731,18 +748,20 @@ footer {
 }
 
 /* Aside content*/
-aside ul {
+.recentPosts ul {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  z-index: 1;
 }
 
-aside li {
+.recentPosts li {
   padding: 10px 0;
 }
 
-aside li::before {
+.recentPosts li::before {
   content: "•";
   color: #4ceea7;
   margin-right: 10px;
@@ -970,7 +989,7 @@ text {
   }
   .secondHeaderBackground {
     height: 450px;
-    margin-top: 100px;
+    margin-top: -50px;
   }
 }
 @media (max-width: 992px) {
@@ -1053,10 +1072,12 @@ text {
   header {
     height: 400px;
   }
+  h1 {
+    margin-top: 20px;
+  }
   .secondHeaderBackground {
     height: 350px;
-    margin-top: -50px;
-    border: 40px solid yellow;
+    border: 40px solid #fdfa69;
     border-right: none;
   }
   .gallery {
@@ -1128,32 +1149,34 @@ text {
   }
 }
 @media (max-width: 576px) {
-  h1 {
-    margin-top: 85px;
-    font-size: 45px;
-  }
   .gallery img {
     width: 80%;
     margin: 10px auto;
   }
-}
-@media (max-width: 576px) {
-  .secondHeaderBackground {
-    height: 250px;
-    margin-top: 50px;
-    border: 30px solid yellow;
-    border-right: none;
-  }
-}
-@media (max-width: 576px) {
   h1 {
     font-size: 45px;
+    margin-top: 35px;
+    margin-left: 150px;
   }
   .secondHeaderBackground {
     height: 250px;
-    margin-top: 120px;
-    border: 20px solid yellow;
+    margin-top: 110px;
+    border: 20px solid #fdfa69;
     border-right: none;
+  }
+}
+@media (max-width: 476px) {
+  h1 {
+    margin-left: 0px;
+    margin-top: 90px;
+  }
+  .aboutSectionTitleContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
   }
 }
 @media (max-width: 800px) {
@@ -1221,10 +1244,8 @@ text {
 }
 @media (max-width: 1180px) {
   #contact h2 {
-    margin-left: 0px;
-    margin-top: 100px;
     width: 70%;
-    margin: 50px auto;
+    margin: 155px auto;
     padding-left: 220px;
   }
   .formContainer {
@@ -1238,6 +1259,11 @@ text {
   }
   .socialsContainer {
     margin: 50px auto;
+  }
+}
+@media (max-width: 769px) {
+  #contact h2 {
+    margin-top: 70px;
   }
 }
 @media (max-width: 725px) {
