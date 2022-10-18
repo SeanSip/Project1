@@ -217,8 +217,6 @@ ul {
 a:hover,
 a:focus {
   border-bottom: #4ceea7 3px solid;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
 }
 
 a:focus {
@@ -1101,35 +1099,40 @@ text {
             transform: translatex(-8px) translatey(24px) rotate(130deg);
   }
   .navMenu {
-    position: fixed;
+    visibility: hidden;
     top: 100px;
-    right: 0%;
-    background-color: white;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
-    text-align: center;
-    -webkit-transform: scale(0%);
-            transform: scale(0%);
-    -webkit-transition: 0.2s ease-in-out all;
-    transition: 0.2s ease-in-out all;
-  }
-  .navMenu li {
-    margin: 10px 0px;
-  }
-  .navMenu.active {
-    background-color: rgba(255, 255, 0, 0.96);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    background-color: white;
     border: black 5px solid;
     border-right: none;
-    border-left: none;
+    height: 30%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: 0.2s ease-in all;
+    transition: 0.2s ease-in all;
+    overflow-x: hidden;
+    padding: 20%;
+  }
+  .navMenu li {
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding: 5% 0px;
+  }
+  .navMenu.active {
+    visibility: visible;
+    background-color: rgba(255, 255, 0, 0.96);
     z-index: 3;
-    position: fixed;
-    display: block;
-    padding: 0px;
-    -webkit-transform: scale(100%);
-            transform: scale(100%);
+    width: 10%;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 @media (max-width: 692px) {

@@ -158,31 +158,32 @@
     transform: translatex(-8px) translatey(24px) rotate(130deg);
   }
   .navMenu {
-    position: fixed;
+    visibility: hidden;
     top: 100px;
-    right: 0%;
-    background-color: white;
     flex-direction: column;
-    width: 100%;
-    text-align: center;
-    transform: scale(0%);
-    transition: 0.2s ease-in-out all;
+    justify-content: space-between;
+    align-content: center;
+    background-color: white;
+    border: black 5px solid;
+    border-right: none;
+    height: 30%;
+    transform: translateX(100%);
+    transition: 0.2s ease-in all;
+    overflow-x: hidden;
+    padding: 20%;
   }
 
   .navMenu li {
-    margin: 10px 0px;
+    align-self: center;
+    padding: 5% 0px;
   }
 
   .navMenu.active {
+    visibility: visible;
     background-color: rgba(255, 255, 0, 0.96);
-    border: black 5px solid;
-    border-right: none;
-    border-left: none;
     z-index: 3;
-    position: fixed;
-    display: block;
-    padding: 0px;
-    transform: scale(100%);
+    width: 10%;
+    transform: translateX(0%);
   }
 }
 
