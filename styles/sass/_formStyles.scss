@@ -1,17 +1,29 @@
 // Form for contact page
+input,
+textarea,
+text {
+  background-color: transparent;
+}
+
 textarea {
   resize: none;
   border-style: none;
   border-color: #4ceea7;
-  border: #4cee4c solid 1px;
+  border: #4cee4c solid 2px;
   width: 100%;
+  padding: 20px;
 }
 
 input,
 text {
   border-style: none;
-  border-bottom: #4cee4c solid 1px;
+  border-bottom: #4cee4c solid 2px;
   margin-top: 10px;
+}
+
+input {
+  padding-bottom: 20px;
+  padding-left: 30px;
 }
 
 .name,
