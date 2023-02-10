@@ -32,6 +32,23 @@
 }
 
 @media (max-width: 550px) {
+  .wrapper {
+    width: 92%;
+  }
+
+  .blogText {
+    width: 100%;
+  }
+
+  .blogText h3 {
+    font-size: 35px;
+  }
+
+  .blogText h3,
+  .blogText p {
+    padding-left: 20px;
+  }
+
   .topComment,
   .bottomComment {
     flex-direction: column;
@@ -40,5 +57,16 @@
   .topComment img,
   .bottomComment img {
     margin: 20px 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .wrapper {
+    width: 95%;
+  }
+
+  .blogText h3,
+  .blogText p {
+    padding-left: 10px;
   }
 }

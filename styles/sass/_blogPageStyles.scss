@@ -20,9 +20,7 @@
 
 .rightBlogPostContainer img {
   margin-top: -250px;
-
   max-width: 90%;
-  margin-bottom: 50px;
   box-shadow: yellow -40px 40px;
   z-index: 1;
 }
@@ -37,11 +35,29 @@
 }
 
 .blogText {
-  margin-top: 80px;
   width: 90%;
+  border: yellow 10px solid;
+  border-top: none;
+  border-right: none;
+}
+
+.blogText h3 {
+  padding-top: 80px;
+}
+
+.blogText p,
+.blogText h3 {
+  padding-left: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 0px;
 }
 
 /* Aside content*/
+
+.aboutCapture p,
+.recentPosts ul {
+  margin-top: 30px;
+}
 
 .recentPosts ul {
   flex-direction: column;
@@ -56,7 +72,7 @@
 .recentPosts li::before {
   content: "•";
   color: #4ceea7;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 aside {
@@ -75,11 +91,16 @@ aside img {
 .recentPosts {
   display: flex;
   flex-direction: column;
-  width: 68%;
+  width: 100%;
   align-self: center;
+  padding-bottom: 50px;
 }
 
 /* comment section */
+
+.rightBlogPostContainer h4 {
+  padding-top: 20px;
+}
 
 .topComment,
 .bottomComment {
